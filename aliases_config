@@ -1,0 +1,3 @@
+# General
+alias cls="clear"
+alias xc="pbcopy"
