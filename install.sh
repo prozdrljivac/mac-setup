@@ -113,6 +113,27 @@ for source in "${!dotfiles[@]}"; do
     fi
 done
 
+# Configure iTerm2 Dynamic Profile
+print_status "Configuring iTerm2 theme and font..."
+ITERM_PROFILES_DIR="$HOME/Library/Application Support/iTerm2/DynamicProfiles"
+
+if [ -f "$DOTFILES_DIR/iterm2/profile.json" ]; then
+    # Create Dynamic Profiles directory if it doesn't exist
+    mkdir -p "$ITERM_PROFILES_DIR"
+
+    # Create symlink to profile
+    PROFILE_DEST="$ITERM_PROFILES_DIR/tokyo-night-storm.json"
+    if [ -e "$PROFILE_DEST" ] && [ "$(readlink "$PROFILE_DEST")" != "$DOTFILES_DIR/iterm2/profile.json" ]; then
+        backup_file "$PROFILE_DEST"
+    fi
+
+    ln -sf "$DOTFILES_DIR/iterm2/profile.json" "$PROFILE_DEST"
+    print_status "Linked iTerm2 profile -> $PROFILE_DEST"
+    print_warning "Please restart iTerm2 to apply the Tokyo Night Storm theme"
+else
+    print_warning "iTerm2 profile not found, skipping theme configuration"
+fi
+
 # Set Zsh as default shell
 print_status "Checking default shell..."
 if [ "$SHELL" != "$(which zsh)" ]; then

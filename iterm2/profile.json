@@ -1,0 +1,139 @@
+{
+  "Profiles": [
+    {
+      "Name": "Tokyo Night Storm",
+      "Guid": "tokyo-night-storm",
+      "Dynamic Profile Parent Name": "Default",
+
+      "Normal Font": "JetBrainsMono-Regular 18",
+      "Non Ascii Font": "JetBrainsMono-Regular 18",
+
+      "Ansi 0 Color": {
+        "Red Component": 0.11372549019607843,
+        "Green Component": 0.12549019607843137,
+        "Blue Component": 0.1843137254901961
+      },
+      "Ansi 1 Color": {
+        "Red Component": 0.9686274509803922,
+        "Green Component": 0.4666666666666667,
+        "Blue Component": 0.5568627450980392
+      },
+      "Ansi 2 Color": {
+        "Red Component": 0.6196078431372549,
+        "Green Component": 0.807843137254902,
+        "Blue Component": 0.41568627450980394
+      },
+      "Ansi 3 Color": {
+        "Red Component": 0.8784313725490196,
+        "Green Component": 0.6862745098039216,
+        "Blue Component": 0.40784313725490196
+      },
+      "Ansi 4 Color": {
+        "Red Component": 0.47843137254901963,
+        "Green Component": 0.6352941176470588,
+        "Blue Component": 0.9686274509803922
+      },
+      "Ansi 5 Color": {
+        "Red Component": 0.7333333333333333,
+        "Green Component": 0.6039215686274509,
+        "Blue Component": 0.9686274509803922
+      },
+      "Ansi 6 Color": {
+        "Red Component": 0.16470588235294117,
+        "Green Component": 0.7647058823529411,
+        "Blue Component": 0.8705882352941177
+      },
+      "Ansi 7 Color": {
+        "Red Component": 0.6627450980392157,
+        "Green Component": 0.6941176470588235,
+        "Blue Component": 0.8392156862745098
+      },
+      "Ansi 8 Color": {
+        "Red Component": 0.2549019607843137,
+        "Green Component": 0.2823529411764706,
+        "Blue Component": 0.40784313725490196
+      },
+      "Ansi 9 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.47843137254901963,
+        "Blue Component": 0.5764705882352941
+      },
+      "Ansi 10 Color": {
+        "Red Component": 0.7254901960784313,
+        "Green Component": 0.9490196078431372,
+        "Blue Component": 0.48627450980392156
+      },
+      "Ansi 11 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.6196078431372549,
+        "Blue Component": 0.39215686274509803
+      },
+      "Ansi 12 Color": {
+        "Red Component": 0.49019607843137253,
+        "Green Component": 0.6509803921568628,
+        "Blue Component": 1.0
+      },
+      "Ansi 13 Color": {
+        "Red Component": 0.7529411764705882,
+        "Green Component": 0.792156862745098,
+        "Blue Component": 0.9607843137254902
+      },
+      "Ansi 14 Color": {
+        "Red Component": 0.050980392156862744,
+        "Green Component": 0.7254901960784313,
+        "Blue Component": 0.8431372549019608
+      },
+      "Ansi 15 Color": {
+        "Red Component": 0.7529411764705882,
+        "Green Component": 0.792156862745098,
+        "Blue Component": 0.9607843137254902
+      },
+
+      "Background Color": {
+        "Red Component": 0.1411764705882353,
+        "Green Component": 0.1568627450980392,
+        "Blue Component": 0.23137254901960785
+      },
+      "Foreground Color": {
+        "Red Component": 0.7529411764705882,
+        "Green Component": 0.792156862745098,
+        "Blue Component": 0.9607843137254902
+      },
+      "Bold Color": {
+        "Red Component": 0.7529411764705882,
+        "Green Component": 0.792156862745098,
+        "Blue Component": 0.9607843137254902
+      },
+      "Cursor Color": {
+        "Red Component": 0.7529411764705882,
+        "Green Component": 0.792156862745098,
+        "Blue Component": 0.9607843137254902
+      },
+      "Cursor Text Color": {
+        "Red Component": 0.1411764705882353,
+        "Green Component": 0.1568627450980392,
+        "Blue Component": 0.23137254901960785
+      },
+      "Selection Color": {
+        "Red Component": 0.21176470588235294,
+        "Green Component": 0.2901960784313726,
+        "Blue Component": 0.5098039215686274
+      },
+      "Selected Text Color": {
+        "Red Component": 0.7529411764705882,
+        "Green Component": 0.792156862745098,
+        "Blue Component": 0.9607843137254902
+      },
+
+      "Use Bold Font": true,
+      "Use Bright Bold": true,
+      "Use Italic Font": true,
+      "Cursor Type": 0,
+      "Blinking Cursor": false,
+      "Use Cursor Guide": false,
+      "Cursor Boost": 0,
+      "Terminal Type": "xterm-256color",
+      "Scrollback Lines": 10000
+    }
+  ]
+}

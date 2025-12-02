@@ -9,6 +9,7 @@ Automated macOS development environment setup for my personal use using dotfiles
 - **zshrc** - Zsh configuration with Oh My Zsh, Powerlevel10k theme, and plugins
 - **aliases_config** - Custom shell aliases
 - **p10k.zsh** - Powerlevel10k theme configuration
+- **iterm2/profile.json** - iTerm2 Dynamic Profile with Tokyo Night Storm theme and JetBrains Mono font (size 18)
 
 ### Automated Installation
 
@@ -80,7 +81,13 @@ The `install.sh` script performs the following steps:
    - Links aliases_config → ~/.aliases_config
    - Links p10k.zsh → ~/.p10k.zsh
 
-7. **Sets Zsh as default shell** (if needed)
+7. **Configures iTerm2 theme and font**
+   - Creates Dynamic Profiles directory
+   - Symlinks iTerm2 profile with Tokyo Night Storm theme
+   - Sets JetBrains Mono font at size 18
+   - Requires iTerm2 restart to apply changes
+
+8. **Sets Zsh as default shell** (if needed)
 
 The script is **idempotent** - you can run it multiple times safely. It will skip steps that are already complete.
 
@@ -124,6 +131,7 @@ See the `Brewfile` for the complete list. Key packages include:
 - terraform - Infrastructure as code
 - zsh-autosuggestions - Fish-like autosuggestions
 - iterm2 - Terminal emulator
+- font-jetbrains-mono - JetBrains Mono font for iTerm2
 
 ## Notes
 
@@ -131,6 +139,7 @@ See the `Brewfile` for the complete list. Key packages include:
 - Powerlevel10k may prompt you to configure it on first run. You can reconfigure anytime with `p10k configure`
 - NVM is configured to load via Homebrew (see zshrc:116-118)
 - The symlink approach allows you to edit files in this repository and see changes immediately in your shell
+- iTerm2 configuration uses Dynamic Profiles which are symlinked from the repository. Restart iTerm2 after running the install script to apply the Tokyo Night Storm theme and font settings
 
 ## Troubleshooting
 

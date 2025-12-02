@@ -15,3 +15,5 @@ brew "zsh-autosuggestions"
 brew "hashicorp/tap/terraform"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# JetBrains Mono font
+cask "font-jetbrains-mono"
